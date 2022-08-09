@@ -1,0 +1,182 @@
+body {
+    font-family: sans-serif;
+  }
+
+  .App {
+    text-align: center;
+  }
+
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  .App-link {
+    color: #61dafb;
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  table {
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 18px;
+  }
+
+  th:hover, tr:hover {
+    background-color: #ccc;
+    color: #282c34;
+  }
+
+  thead th {
+    width: 25%;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  .checkbox {
+    width: 5%;
+    float: left;
+    margin-left: 25%;
+  }
+
+  .name {
+    width: 5%;
+    float: left;
+    margin-left: 10%;
+  }
+
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    transform: scale(2);
+    margin: 0px;
+  }
+
+  .dot {
+    height: 25px;
+    width: 25px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .selected {
+    background-color: #ccc;
+    color: #282c34;
+  }
+
+  .download-icon {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .Modal {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    background-color: rgb(242, 208, 153);
+    padding: 20px
+  }
+
+  .Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #efefef;
+  }
+
+  .controls {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    width: 100%;
+    margin-left: 25px;
+  }
+
+  .downloadAll {
+      cursor: pointer;
+  }
+
+  .modalPath_selected {
+      border-bottom: 2px solid #ccc;
+      padding: 15px;
+  }
+
+  .modalPath_download {
+    border-bottom: 2px solid green;
+    padding: 15px;
+  }
+
+  .download_label {
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #9dfab6;
+      margin: 5px;
+  }
+
+  .scheduled_label {
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #f2cd52;
+      margin: 5px;
+  }
+
+  .modal_label {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #efefef;
+    margin: 5px;
+  }
